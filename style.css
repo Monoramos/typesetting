@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@400;600;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    min-width: 1000px;
+    max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+    float: left;
+    width: 50%;
+}
+
+aside {
+    float: left;
+    width: 30%;
+}
+
+nav {
+    float: left;
+    width: 20%;
+}
+
+footer {
+    clear: both;
+}
+
+header,
+section,
+aside,
+nav,
+footer {
+    padding: 20px;
+}
+
+/* header and footer */
+
+header,
+footer {
+    border-top: 5px solid #a66;
+    border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR styling/typesetting CSS code BELOW HERE */
+
+/* Fonts */
+html {
+    font-size: 10px;
+    /* 1rem = 10px */
+}
+
+body {
+    font-family: "Noto Serif", Georgia, "Times New Roman", serif;
+    font-size: 1.6rem;
+    line-height: 2;
+    letter-spacing: 0.05em;
+    word-spacing: 0.15em;
+    color: #222;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Josefin Slab", "Rockwell", Georgia, serif;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.1em;
+    color: #111;
+}
+
+h1 {
+    font-size: 5.6rem;
+    text-align: center;
+    margin: 0;
+}
+
+h2 {
+    font-size: 3.6rem;
+    margin: 0 0 3rem;
+}
+
+section h2:not(:first-child) {
+    margin-top: 4rem;
+}
+
+p {
+    margin: 0 0 1.6rem;
+}
+
+section h2+p {
+    text-indent: 1.25rem;
+}
+
+header {
+    padding: 5rem 2rem;
+}
+
+section,
+aside,
+nav {
+    padding-top: 4rem;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+/* Links*/
+a:link {
+    color: #a05555;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #7a5a7a;
+}
+
+a:hover,
+a:focus {
+    color: #5c2a2a;
+    text-decoration: none;
+}
+
+a:focus {
+    outline: none;
+}
+
+a:active {
+    color: #fff;
+    background-color: #a66;
+    text-decoration: none;
+    box-shadow: 0 0 0 3px #a66;
+}
+
+a[href^="http"]::after {
+    content: "";
+    display: inline-block;
+    width: 0.8em;
+    height: 0.8em;
+    margin-left: 0.3em;
+    background: no-repeat center / contain url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23111' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6'/%3E%3Cpath d='M15 3h6v6'/%3E%3Cpath d='M10 14L21 3'/%3E%3C/svg%3E");
+}
+
+/* Lists */
+ul,
+ol {
+    margin: 1.6rem 0;
+    padding-left: 4rem;
+}
+
+li {
+    line-height: 2;
+}
+
+ul {
+    list-style: square;
+}
+
+li::marker {
+    color: #111;
+}
+
+ol li::marker {
+    color: #a66;
+    font-weight: 700;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 0 2.4rem;
+    line-height: 1.2;
+}
+
+nav a,
+nav a:link,
+nav a:visited {
+    display: block;
+    padding: 2rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Josefin Slab", "Rockwell", Georgia, serif;
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    color: #a66;
+    border: 1px solid #a66;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #5c2a2a;
+    background-color: #f3e6e6;
+    border-color: #5c2a2a;
+}
+
+nav a:active {
+    color: #fff;
+    background-color: #a66;
+    border-color: #a66;
+    box-shadow: none;
+}
